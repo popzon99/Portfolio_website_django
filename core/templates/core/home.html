@@ -1,0 +1,29 @@
+{% extends 'core/base.html' %}
+{% load static %}
+ {% block content %}   
+<div class=" mt-5">
+    <div class="text-center">
+         <img src="{% static 'core/images/pic2.jpg' %}" alt="profilepic"
+          class="img-thumbnail" width="250px" height="150px" >
+    </div>
+    
+    <div class="mt-5 text-white  mx-5 text-justify ">
+        <h1 class="font-weight-bold .st-font">Hello</h1>
+        <div class="px-4" style="line-hieght:2rem;">
+             <p style="text-indent:100px;">I am <b class="text-warning">Popson Sabu.</b>
+                 I am a self taught web developer.I mainly focus on the backend side of the web application.
+             </p>
+               
+               </p>   
+                     Although i have a bachlers degree in mechanical engineering, over the time my interest turned to web development.I am a quick learning and an adaptive individual who would like learn and sharpen my knowledge for the best of me and the organization that  i am working on. 
+              </p>
+              
+              
+        </div>
+    </div>
+ <div class="text-center">
+    <a href="{% url 'contact' %}" class="btn btn-outline-warning my-3 mr-5 ">Hire me</a>
+    <a href="{% url 'contact' %}" class="btn btn-outline-info my-3">Contact</a>
+ </div>
+</div>
+  {% endblock content %}  
